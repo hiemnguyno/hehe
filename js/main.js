@@ -1,5 +1,7 @@
 $(document).ready(function() {
     // process bar
+    var audio = new Audio(CONFIG.swishLink);
+    audio.play();
     console.log(CONFIG);
     setTimeout(function() {
         firstQuestion();
