@@ -13,7 +13,7 @@ const CONFIG = {
     messDesc: 'biết ngay mình đập try quá mà :))',
     btnAccept: 'ib với anh thì ấn here :>',
     messLink: 'https://www.facebook.com/messages/t/100069153999472', //link fb
-    bgLink: 'https://github.com/hiemnguyno/hehe/blob/fd5177c2e32e42e440a673a4a719c4dc7f138293/background.jpeg?raw=true', //link ảnh nền
+    bgLink: 'https://github.com/hiemnguyno/hehe/background.jpeg', //link ảnh nền
     iputBgLink: 'https://i.pinimg.com/originals/20/5b/71/205b712184084a649e5c39035d05a873.jpg', //link iputBgLink
     lookMeLink: 'https://ih1.redbubble.net/image.1114362285.4038/flat,750x,075,f-pad,750x1000,f8f8f8.jpg', //link ảnh lookMe
     soundLink: 'https://huypham9205.github.io/tang-crush/sound/sound.mp3', //link nhac
