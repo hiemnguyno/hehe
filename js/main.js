@@ -19,9 +19,6 @@ function init(){
 }
 
 function firstQuestion(){
-    var audio = new Audio(CONFIG.swishLink);
-    audio.play();
-    $('.content').hide();
     Swal.fire({
         title: CONFIG.introTitle,
         text: CONFIG.introDesc,
@@ -32,7 +29,8 @@ function firstQuestion(){
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnIntro
       }).then(function(){
-        $('.content').show(200);
+         var audio = new Audio(CONFIG.duckLink);
+         audio.play();
       })
 }
 
@@ -41,7 +39,5 @@ init()
 
 // show popup
 $('#yes').click(function() {
-    var audio = new Audio(CONFIG.duckLink);
-    audio.play();
 })
 
