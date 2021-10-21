@@ -28,16 +28,11 @@ function firstQuestion(){
         background: '#fff url("'+CONFIG.iputBgLink+'")',
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnIntro
-      }).then(function(){
+      }).click(function(){
          var audio = new Audio(CONFIG.duckLink);
          audio.play();
       })
 }
 
-
-init()
-
-// show popup
-$('#yes').click(function() {
 })
 
