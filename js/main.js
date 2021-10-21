@@ -33,6 +33,6 @@ function firstQuestion(){
          audio.play();
       })
 }
-
+init()
 })
 
