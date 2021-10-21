@@ -43,36 +43,5 @@ init()
 $('#yes').click(function() {
     var audio = new Audio(CONFIG.duckLink);
     audio.play();
-    Swal.fire({
-        title: CONFIG.question,
-        html: true,
-        width: 900,
-        padding: '3em',
-        html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Whyyy'>",
-        background: '#fff url("'+CONFIG.iputBgLink+'")',
-        backdrop: `
-              rgba(0,0,123,0.4)
-              
-              left top
-              no-repeat
-            `,
-        confirmButtonColor: '#3085d6',
-        confirmButtonColor: '#fe8a71',
-        confirmButtonText: CONFIG.btnReply
-    }).then((result) => {
-        if (result.value) {
-            Swal.fire({
-                width: 900,
-                confirmButtonText: CONFIG.btnAccept,
-                background: '#fff url("'+CONFIG.iputBgLink+'")',
-                title: CONFIG.mess,
-                text: CONFIG.messDesc,
-                confirmButtonColor: '#83d0c9',
-                onClose: () => {
-                    window.location = CONFIG.messLink;
-                  }
-            })
-        }
-    })
 })
 
